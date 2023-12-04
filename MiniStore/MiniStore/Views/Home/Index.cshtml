@@ -1,0 +1,385 @@
+﻿@model List<Slider>
+@* @model List<Card> *@
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!--SLIDER START-->
+                @foreach (var items in Model)
+                {
+<div class="slider">
+    <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="slider-shop" data-source="gallery" style="background:rgba(255,255,255,0);padding:0px;">
+        <!-- START REVOLUTION SLIDER 5.4.8.1 fullscreen mode -->
+        <div id="rev_slider_1_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.8.1">
+            <ul>
+                <!-- SLIDE  -->
+                <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="assets/100x50_44515-slider-bg-3.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide 3" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <!-- MAIN IMAGE -->
+                        <img src="@items.ImageUrl" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off"    class="rev-slidebg" alt="slider-image" data-no-retina>
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption   tp-resizeme rs-parallaxlevel-2"
+                         id="slide-3-layer-1"
+                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['-120','-115','-114','-114']"
+                         data-fontsize="['16','14','14','14']"
+                         data-width="none"
+                         data-height="none"
+                         data-whitespace="nowrap"
+                         data-type="text"
+                         data-responsive_offset="on"
+                         data-frames='[{"delay":10,"speed":2000,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":280,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                         data-textAlign="['inherit','inherit','inherit','inherit']"
+                         data-paddingtop="[0,0,0,0]"
+                         data-paddingright="[0,0,0,0]"
+                         data-paddingbottom="[0,0,0,0]"
+                         data-paddingleft="[0,0,0,0]"
+                         style="z-index: 5; white-space: nowrap; font-size: 16px; line-height: 22px; font-weight: 500; color: #eaeaef;font-family:'Poppins', sans-serif;">
+                        @items.Layer1
+                    </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption   tp-resizeme rs-parallaxlevel-3"
+                         id="slide-3-layer-2"
+                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['-52','-52','-52','-52']"
+                         data-fontsize="['60','60','50','40']"
+                         data-width="none"
+                         data-height="none"
+                         data-whitespace="nowrap"
+                         data-type="text"
+                         data-responsive_offset="on"
+                         data-frames='[{"delay":10,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":280,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                         data-textAlign="['inherit','inherit','inherit','inherit']"
+                         data-paddingtop="[0,0,0,0]"
+                         data-paddingright="[0,0,0,0]"
+                         data-paddingbottom="[0,0,0,0]"
+                         data-paddingleft="[0,0,0,0]"
+                         style="z-index: 6; white-space: nowrap; font-size: 60px; line-height: 16px; font-weight: 500; color: #ffffff; letter-spacing: 0px;font-family:'Poppins', sans-serif;">
+                        @items.Layer2
+                    </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption   tp-resizeme rs-parallaxlevel-2"
+                         id="slide-3-layer-3"
+                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['5','5','5','5']"
+                         data-fontsize="['18','18','16','16']"
+                         data-width="none"
+                         data-height="none"
+                         data-whitespace="nowrap"
+                         data-type="text"
+                         data-responsive_offset="on"
+                         data-frames='[{"delay":10,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":280,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                         data-textAlign="['inherit','inherit','inherit','inherit']"
+                         data-paddingtop="[0,0,0,0]"
+                         data-paddingright="[0,0,0,0]"
+                         data-paddingbottom="[0,0,0,0]"
+                         data-paddingleft="[0,0,0,0]"
+                         style="z-index: 7; white-space: nowrap; font-size: 18px; line-height: 22px; font-weight: 400; color: #eaeaef; font-family:'Poppins', sans-serif;">
+                        @items.Layer3
+                    </div>
+
+                        <div class="tp-caption rev-btn  rs-parallaxlevel-2"
+                         id="slide-3-layer-4"
+                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['82','82','73','70']"
+                         data-width="none"
+                         data-height="none"
+                         data-whitespace="nowrap"
+                         data-type="text"
+                         data-responsive_offset="on"
+                         data-responsive="off"
+                         data-frames='[{"delay":10,"speed":2000,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":280,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                         data-textAlign="['inherit','inherit','inherit','inherit']"
+                         data-paddingtop="[0,0,0,0]"
+                         data-paddingright="[0,0,0,0]"
+                         data-paddingbottom="[0,0,0,0]"
+                         data-paddingleft="[0,0,0,0]"
+                         style="z-index: 11; max-width:960px; white-space: nowrap; font-size: 12px; line-height: 22px; font-weight: 600; color: #ffffff; letter-spacing: 0px;font-family:Poppins;">
+                        <a href="#" class="btn white-trans-btn-with-white-border"> @items.ButtonText</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+        </div>
+    </div><!-- END REVOLUTION SLIDER -->
+</div>
+                }
+<!--SLIDER END-->
+
+
+
+
+<!-- START PORTOLIO SECTION -->
+<div class="portfolio-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- START PORTFOLIO HEADING -->
+            <div class="col-12">
+                <div class="portfolioHeading text-center">
+                    <h1 class="high-lighted-heading">Our Luxurious Product</h1>
+                    <p>Aenean imperdiet. Etiam ultricies nisi vel augue men tuhi spectrum alle me.</p>
+                </div>
+            </div>
+            <!-- END PORTFOLIO HEADING -->
+
+            <!-- START FILTERS -->
+            <div class="col-12">
+                <div class="clearfix d-flex justify-content-center">
+                    <div id="js-filters-blog-posts" class="cbp-l-filters-button cbp-1-filters-alignCenter">
+                        <div data-filter="*" class="cbp-filter-item-active cbp-filter-item cbp-l-filters-list-first">All </div>
+                        <div data-filter=".CausalShirts" class="cbp-filter-item">Causal Shirts </div>
+                        <div data-filter=".formalShirts" class="cbp-filter-item">Formal Shirts </div>
+                        <div data-filter=".others" class="cbp-filter-item cbp-l-filters-list-last">Others </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END FILTERS -->
+
+            @* <!-- START PORTFOLIO IMAGES -->
+            <div class="col-12">
+                <div id="js-grid-blog-posts" class="cbp">
+                    @foreach (var cards in Model){
+                    <div class="cbp-item CausalShirts others wow slideInUp">
+                        <a class="portfolio-circle-cart" href="#">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        <div class="cbp-caption-defaultWrap  owl-theme sync-portfolio-carousel owl-carousel">
+                            <div class="item"> <a href="~/shop/img/product-listing/p24.jpg" class="cbp-caption" data-fancybox="gallery1" data-title="Shirt Name"><img src="@cards.ImageUrl1" alt=""></a></div>
+                            <div class="item"> <a href="~/shop/img/product-listing/p25.jpg" class="cbp-caption" data-fancybox="gallery1" data-title="Shirt Name"><img src="@cards.ImageUrl2" alt=""></a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <a href="~/shop/product-detail.html" target="_blank" class="cbp-l-grid-blog-title portfolio-title">@cards.Title</a>
+                            </div>
+                            <div class="col-12 text-center">
+                                <div class="cbp-l-grid-blog-desc portfolio-des">@cards.Price</div>
+                            </div>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+            <!-- END PORTFOLIO IMAGES --> *@
+
+        </div>
+    </div>
+</div>
+<!-- END PORTOLIO SECTION -->
+
+
+
+<!--START BANNER SECTION-->
+<div class="banner-section parallax-slide">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 offset-lg-5 text-center">
+                <div class="banner-content-wrapper">
+                    <span>TRENDING PRODUCT OF THE WEEK</span>
+                    <h1>Shirts Collections</h1>
+                    <p>Aenean imperdiet. Etiam ultricies nisi vel augue men tuhi spectrum alle me</p>
+                    <button type="button" class="btn black-btn-with-border">SHOP NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END BANNER SECTION-->
+
+
+
+<!--START LATEST ARRIVALS-->
+<div class="lastest_arrivals">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h1>Latest Arrivals</h1>
+            </div>
+
+            <div class="col-12">
+                <div class="lastest_featured_products owl-carousel owl-theme">
+
+                    <div class="lastest_arrival_items item">
+                        <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
+                        <div class="card">
+                            <span class="product-type">NEW</span>
+                            <div class="image-holder">
+                                <a href="~/shop/img/l1.jpg" data-fancybox="lastest_product" data-title="Shirt Name">
+                                    <img src="~/shop/img/l1.jpg" class="card-img-top" alt="Lastest Arrivals 1">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <h5 class="card-title">Casual Wear</h5>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <p class="card-text"> $999.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lastest_arrival_items item">
+                        <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
+                        <div class="card">
+                            <span class="product-type">NEW</span>
+                            <div class="image-holder">
+                                <a href="~/shop/img/l7.jpg" data-fancybox="lastest_product" data-title="Lastest Arrivals 1">
+                                    <img src="~/shop/img/l7.jpg" class="card-img-top" alt="Lastest Arrivals 1">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <h5 class="card-title">Light Wear</h5>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <p class="card-text text-center"> $999.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lastest_arrival_items item">
+                        <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
+                        <div class="card">
+                            <span class="product-type">NEW</span>
+                            <div class="image-holder">
+                                <a href="~/shop/img/l8.jpg" data-fancybox="lastest_product" data-title="Lastest Arrivals 1">
+                                    <img src="~/shop/img/l8.jpg" class="card-img-top" alt="Lastest Arrivals 1">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <h5 class="card-title">Long Frock</h5>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <p class="card-text text-center"> $999.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lastest_arrival_items item">
+                        <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
+                        <div class="card">
+                            <span class="product-type">NEW</span>
+                            <div class="image-holder">
+                                <a href="~/shop/img/l9.jpg" data-fancybox="lastest_product" data-title="Lastest Arrivals 1">
+                                    <img src="~/shop/img/l9.jpg" class="card-img-top" alt="Lastest Arrivals 1">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <h5 class="card-title">Casual Wear</h5>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <p class="card-text text-center"> $999.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lastest_arrival_items item">
+                        <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
+                        <div class="card">
+                            <span class="product-type">NEW</span>
+                            <div class="image-holder">
+                                <a href="~/shop/img/l10.jpg" data-fancybox="lastest_product" data-title="Lastest Arrivals 1">
+                                    <img src="~/shop/img/l10.jpg" class="card-img-top" alt="Lastest Arrivals 1">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <h5 class="card-title">Casual Wear</h5>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <p class="card-text text-center"> $999.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lastest_arrival_items item">
+                        <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
+                        <div class="card">
+                            <span class="product-type">NEW</span>
+                            <div class="image-holder">
+                                <a href="~/shop/img/l11.jpg" data-fancybox="lastest_product" data-title="Lastest Arrivals 1">
+                                    <img src="~/shop/img/l11.jpg" class="card-img-top" alt="Lastest Arrivals 1">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <h5 class="card-title">Light Wear</h5>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <p class="card-text text-center"> $999.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lastest_arrival_items item">
+                        <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
+                        <div class="card">
+                            <span class="product-type">NEW</span>
+                            <div class="image-holder">
+                                <a href="~/shop/img/l12.jpg" data-fancybox="lastest_product" data-title="Lastest Arrivals 1">
+                                    <img src="~/shop/img/l12.jpg" class="card-img-top" alt="Lastest Arrivals 1">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <h5 class="card-title">Light Wear</h5>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <p class="card-text text-center"> $999.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lastest_arrival_items item">
+                        <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
+                        <div class="card">
+                            <span class="product-type">NEW</span>
+                            <div class="image-holder">
+                                <a href="~/shop/img/l7.jpg" data-fancybox="lastest_product" data-title="Lastest Arrivals 1">
+                                    <img src="~/shop/img/l13.jpg" class="card-img-top" alt="Lastest Arrivals 1">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <h5 class="card-title">Casual Wear</h5>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <p class="card-text text-center"> $999.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END LATEST ARRIVALS-->

@@ -1,0 +1,52 @@
+﻿@model List<SliderListItemVM>
+@{
+    ViewData["Title"] = "Slider";
+}
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+        <a href="/Admin/Slider/Create" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"> 
+            Create Slider
+        </a>
+    </div>
+
+    <div class="card shadow mb-4">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Image</th>
+                        <th>Layer1</th>
+                        <th>Layer2</th>
+                        <th>Layer3</th>
+                        <th>Button Text</th>
+                        <th colspan="2">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var items in Model)
+                    {
+                        <tr>
+                        <th>@items.Id</th>
+                        <th><img width="200" src="@items.ImageUrl" /></th>
+                        <th>@items.Layer1</th>
+                        <th>@items.Layer2</th>
+                        <th>@items.Layer3</th>
+                        <th>@items.ButtonText</th>
+                        <td class="text-center"><a class="btn btn-outline-info" asp-action="Update" asp-route-id="@items.Id">Update</a></td>
+                        <td class="text-center"><a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@items.Id">Delete</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+
